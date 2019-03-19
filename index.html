@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Quiz</title>
+</head>
+
+<body>
+<header>
+  <nav class="navbar navbar-default navbar-fixed-top">
+  </nav>
+</header>
+
+<div class="container">
+  <div id="parent">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        あなたの答えは 東京 です
+        <h2>
+          日本の首都は
+        </h2>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="panel panel-defaulte show_panel a_1_7">
+              <div class="panel-body"><p>大阪府</p></div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="panel panel-defaulte show_panel a_2_7">
+              <div class="panel-body"><p>北海道</p></div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="panel panel-defaulte show_panel a_3_7">
+              <div class="panel-body"><p>大阪府</p></div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="panel panel-defaulte show_panel a_4_7">
+              <div class="panel-body"><p>東京</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12">
+            <h3>正解！！答えは東京です。</h3>
+          </div>
+        </div>
+
+        <a href="/questions/1/edit">Edit</a>
+        <a data-confirm="Are you sure?" rel="nofollow" data-method="delete" href="/questions/1">Destroy</a>
+      </div>
+    </div>
+
+
+    <form action="/messages" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="WS8iCnl+qBlEqe1CHnX4lY3lOHPutfRqT2ZxqgkUFahALnZpRePhz3SrTj/0lJA476lszNIdEqTBfZvKpr+RbA==" />
+
+      <div class="form-group">
+        <label for="message_content">Content</label>
+        <input class="form-control" placeholder="クイズを始めるには、 quiz と入力して下さい" type="text" name="message[content]" id="message_content" />
+      </div>
+
+      <div class="form-group">
+        <input type="submit" name="commit" value="Create Message" data-disable-with="Create Message" />
+      </div>
+    </form>
+  </div>
+
+</div>
+</body>
+</html>
